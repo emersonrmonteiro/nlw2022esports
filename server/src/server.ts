@@ -38,7 +38,7 @@ app.post('/games/:id/ads', async (request, response) => {
 		data: {
 			gameId,
 			name: body.name,
-			yearPlaying: body.yearPlaying,
+			yearPlaying: body.yearsPlaying,
 			discord: body.discord,
 			weekDays: body.weekDays.join(','),
 			hourStart: convertHoursStringToMinutes(body.hourStart),
